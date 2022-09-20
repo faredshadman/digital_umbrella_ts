@@ -209,13 +209,7 @@
 </style>
 
 <script lang="ts">
-interface Todo {
-  id: string | number;
-  title: string;
-  tags: string[];
-  isDone: boolean;
-}
-type Id = number | string;
+import { Todo, Id } from "./types/todo";
 import { defineComponent } from "vue";
 import NavBar from "./components/NavBar.vue";
 import Multiselect from "@vueform/multiselect";
